@@ -1,10 +1,13 @@
-import React from 'react';
-import { Button } from 'antd';
+import Header from './components/Header';
+import Hero from './components/Hero';
 
 const Home = () => (
-  <div className="App">
-    <Button type="primary">Button</Button>
-  </div>
+  <>
+    <div>
+      <Header />
+      <Hero />
+    </div>
+  </>
 );
 
 export default Home;
