@@ -2,31 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --text: #101014;
-    --background: #f4f4f6;
-    --primary: #2f27ce;
-    --secondary: #908ed7;
-    --accent: #837fcc;
 
-    --linearPrimarySecondary: linear-gradient(#2f27ce, #908ed7);
-    --linearPrimaryAccent: linear-gradient(#2f27ce, #837fcc);
-    --linearSecondaryAccent: linear-gradient(#908ed7, #837fcc);
-    --radialPrimarySecondary: radial-gradient(#2f27ce, #908ed7);
-    --radialPrimaryAccent: radial-gradient(#2f27ce, #837fcc);
-    --radialSecondaryAccent: radial-gradient(#908ed7, #837fcc);
-  }
-  .dark {
-    --text: #ebebef;
-    --background: #09090b;
-    --primary: #3a31d8;
-    --secondary: #2a2871;
-    --accent: #373380;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+@font-face{
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../public/fonts/GraphikRegular.otf') format('otf');
 }
+
+@font-face{
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../public/fonts/GraphikMedium.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../public/fonts/GraphikBold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../public/fonts/InterRegular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../public/fonts/InterMedium.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../public/fonts/InterBold.ttf') format('ttf');
+}
+
+
+
+:root {
+  --text: #101014;
+  --background: #f4f4f6;
+  --primary: #6f79fa;
+  --secondary: #908ed7;
+  --accent: #837fcc;
+
+  --linearPrimarySecondary: linear-gradient(#2f27ce, #908ed7);
+  --linearPrimaryAccent: linear-gradient(#2f27ce, #837fcc);
+  --linearSecondaryAccent: linear-gradient(#908ed7, #837fcc);
+  --radialPrimarySecondary: radial-gradient(#2f27ce, #908ed7);
+  --radialPrimaryAccent: radial-gradient(#2f27ce, #837fcc);
+  --radialSecondaryAccent: radial-gradient(#908ed7, #837fcc);
+
+  --font-inter: 'Inter', sans-serif;
+  --font-graphik: 'Graphik', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-rubik: 'Rubik', sans-serif;
+}
+
+
 
 * {
   scroll-behavior: smooth
+}
+
+body {
+  font-size: 40px;
 }
 
