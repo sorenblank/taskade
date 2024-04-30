@@ -2,15 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  :root {
+    --text: #101014;
+    --background: #f4f4f6;
+    --primary: #2f27ce;
+    --secondary: #908ed7;
+    --accent: #837fcc;
 
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    --linearPrimarySecondary: linear-gradient(#2f27ce, #908ed7);
+    --linearPrimaryAccent: linear-gradient(#2f27ce, #837fcc);
+    --linearSecondaryAccent: linear-gradient(#908ed7, #837fcc);
+    --radialPrimarySecondary: radial-gradient(#2f27ce, #908ed7);
+    --radialPrimaryAccent: radial-gradient(#2f27ce, #837fcc);
+    --radialSecondaryAccent: radial-gradient(#908ed7, #837fcc);
+  }
+  .dark {
+    --text: #ebebef;
+    --background: #09090b;
+    --primary: #3a31d8;
+    --secondary: #2a2871;
+    --accent: #373380;
   }
 }
+
+* {
+  scroll-behavior: smooth
+}
+
