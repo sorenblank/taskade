@@ -17,10 +17,10 @@ const Button = ({className, children, type = 'primary', href}) => {
   }
 
   return (
-    <Link href={`${href ? href : "/"}`} className={`inline-block px-4 py-2 font-roboto font-semibold text-white rounded-md text-[16px] whitespace-nowrap ${bgClass} ${className ? className : ''} transform transition-transform duration-150 active:scale-95`}>
+    <Link href={`${href ? href : "/"}`} className={`block px-4 py-2 font-roboto font-semibold text-white rounded-md text-[16px] whitespace-nowrap ${bgClass} ${className ? className : ''} transform transition-transform duration-150 active:scale-95`}>
         {children}
     </Link>
   )
 }
 
-export default Button
+export default Button;
