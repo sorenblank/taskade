@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 import { useProjectsStore } from '../lib/store';
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const loggedIn = localStorage.getItem('loggedIn')
 
@@ -101,4 +101,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -8,7 +8,7 @@ import Button from '../components/Ui/Button';
 import { header } from '../lib/constants';
 import { useStore } from '../lib/store';
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   const { loggedIn, login } = useStore();
   const [email, setEmail] = useState('');
@@ -101,4 +101,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;
