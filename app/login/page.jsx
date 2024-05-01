@@ -16,11 +16,10 @@ const Page = () => {
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    const loggedIn = localStorage.getItem('loggedIn') === 'true';
     if (loggedIn) {
       router.push('/app');
     }
-  }, []);
+  }, [loggedIn]);
 
   const handleLogin = (event) => {
     event.preventDefault();
