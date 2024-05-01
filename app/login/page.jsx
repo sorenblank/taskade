@@ -33,7 +33,6 @@ const page = () => {
     }
   };
 
-
   return (
     <div>
       <div className="mx-[24px] flex justify-between">
