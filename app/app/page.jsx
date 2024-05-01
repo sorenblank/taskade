@@ -9,13 +9,16 @@ import { useProjectsStore } from '../lib/store';
 
 const Page = () => {
   const router = useRouter();
-  const loggedIn = localStorage.getItem('loggedIn')
+  if (typeof window !== 'undefined') {
+    const loggedIn = localStorage.getItem('loggedIn')
 
-  useEffect(() => {
-    if (!loggedIn) {
-      router.push('/login');
-    }
-  }, [loggedIn]);
+    useEffect(() => {
+      if (!loggedIn) {
+        router.push('/login');
+      }
+    }, [loggedIn]);
+  }
+
 
   const projects = useProjectsStore((state) => state.projects);
   const addProject = useProjectsStore((state) => state.addProject);
@@ -38,16 +41,18 @@ const Page = () => {
 
   useEffect(() => {
     if (projects.length === 0) {
-      const storedProjects = JSON.parse(localStorage.getItem('projects'));
-      if (storedProjects) {
-        setProjects(storedProjects);
-      } else {
-        fetch('/api/projects')
-          .then((response) => response.json())
-          .then((data) => setProjects(data))
-          .catch((error) => console.error('Error:', error));
+      if (typeof window !== 'undefined') {
+        const storedProjects = JSON.parse(localStorage.getItem('projects'));
+        if (storedProjects) {
+          setProjects(storedProjects);
+        } else {
+          fetch('/api/projects')
+            .then((response) => response.json())
+            .then((data) => setProjects(data))
+            .catch((error) => console.error('Error:', error));
+        }
       }
-    }
+      }
   }, [projects]);
 
   return (
