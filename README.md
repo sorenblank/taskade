@@ -1,4 +1,4 @@
-# Taskade | NextJS ( Under Development )
+# Taskade ( Under Development A lot )
 
 Taskade is a simple project and task manager. Perfect for remote teams. Unleash your team productivity with projects task list and collaboration tools. I am trying to make it using NextJs, TailwindCSS, Ant Design and other stuff.
 
