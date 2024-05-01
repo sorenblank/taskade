@@ -7,7 +7,7 @@ const Hero = () => {
             Organize your work and&nbsp;life,&nbsp;finally!
         </h1>
         <p className="w-[90%] sm:w-[500px] md:w-[650px] text-xl sm:text-2xl font-roboto mx-auto text-center text-[#666360]">Become focused, organized, and productive with Taskade. One of the most used project manager and collab tool.</p>
-        <Button type="primary" href="/auth" className="mt-4 mx-auto">
+        <Button type="primary" href="/login" className="mt-4 mx-auto">
               Start for free
         </Button>
     </div>

@@ -76,7 +76,7 @@ const Header = () => {
                   Login
             </Link>
 
-            <Button type="primary" href="/auth" className="ml-1">
+            <Button type="primary" href="/login" className="ml-1">
               Start for free
             </Button>
           </div>
